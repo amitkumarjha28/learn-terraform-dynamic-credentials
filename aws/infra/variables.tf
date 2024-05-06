@@ -7,7 +7,10 @@ variable "instance_type" {
 variable "tags" {
   description = "Tags for instances"
   type        = map(any)
-  default     = {}
+  default     = {
+    project     = "project-alpha",
+    environment = "dev"
+  }
 }
 
 variable "aws_region" {
