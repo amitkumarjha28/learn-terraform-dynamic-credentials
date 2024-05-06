@@ -9,7 +9,8 @@ variable "tags" {
   type        = map(any)
   default     = {
     project     = "project-alpha",
-    environment = "dev"
+    environment = "dev",
+    Name = "tf-example"
   }
 }
 
